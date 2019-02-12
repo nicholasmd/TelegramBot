@@ -1,0 +1,20 @@
+[Unit]
+Description=IPsender
+After=networking.service
+
+[Service]
+Type=simple
+User=aida
+WorkingDirectory=/home/aida/projects/tg_bot
+ExecStart=/home/aida/miniconda3/bin/python /home/aida/projects/tg_bot/ip_sender_tg.py
+Restart=always
+
+# RestartSec=10
+# Output to syslog
+#StandardOutput=syslog
+#StandardError=syslog
+#SyslogIdentifier=nodejs-cryptpad
+#Environment=NODE_ENV=production 
+
+[Install]
+WantedBy=multi-user.target

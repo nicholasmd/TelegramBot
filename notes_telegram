@@ -1,0 +1,2 @@
+curl ifconfig.me for public ip address
+chmod +x teletest.sh to get it working with python, apparently.
